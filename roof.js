@@ -10,8 +10,13 @@ class Roof {
     }
     display(){
       var pos =this.body.position;
+      push()
+      translate(pos.x , pos.y)
+
       rectMode(CENTER);
       fill("blue")
-      rect(pos.x, pos.y, this.width, this.height);
+      rect(0, 0, this.width, this.height);
+
+      pop()
     }
   };

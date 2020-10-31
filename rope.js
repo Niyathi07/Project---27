@@ -21,7 +21,12 @@ class Rope{
         var PointA = this.rope.bodyA.position;
         var PointB = this.rope.bodyB.position;
         strokeWeight(2);
-        line(PointA.x , PointA.y , PointB.x , PointB.y);
+
+        var chain1x = PointA.x
+        var chain1y = PointA.y
+        var chain2x = PointB.x+this.offsetX
+        var chain2y = PointB.y+this.offsetY
+        line(chain1x , chain1y , chain2x , chain2y);
     }
 
 }

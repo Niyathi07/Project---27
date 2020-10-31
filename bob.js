@@ -6,14 +6,14 @@ class Bob {
            isStatic:false,
            restitution:0.3,
            friction:0.8,
-           density:0.5
+           density:1
         }
 
         this.x = x
         this.y = y
         this.r = radius
 
-        this.body = Bodies.circle(this.x,this.y,this.r,options);
+        this.body = Bodies.circle(this.x,this.y,this.r/2,options);
         World.add(world,this.body);
 
         
